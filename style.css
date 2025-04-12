@@ -1,0 +1,45 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Prevents content from being hidden under fixed navbar */
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e71b1b;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+/* Changes background when scrolled */
+.navbar.scrolled {
+    background-color: #28109f;
+}
+
+/* Menu Items */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.nav-item:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+/* Page Content for Scrolling */
+.content {
+    height: 2000px;
+    padding: 20px;
+}
